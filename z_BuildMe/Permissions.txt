@@ -1,0 +1,6 @@
+AWSLambda_FullAccess	
+iamAttachRolePolicy	
+iamCreateRole	
+iamListPolicies	
+lambdaCreateFunction	
+lambdaGetFunctionConfiguration
