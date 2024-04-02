@@ -21,13 +21,13 @@
 # Git *
 Initialize-Git
 
-# Create GitHub repository
-    Create a new repository on GitHub
-    git init
-    git add .
-    git commit -m "Initial commit"
-    git branch -M main
-    git remote add origin
+## Human: Create GitHub repository "BlazorOnSWA"y
+
+# Deploy Git repo to GitHub
+git remote add origin https://github.com/datasciguycode/BlazorOnSWA01
+git push -u origin master
+Add-GitCommit -p_strCommitMessage "Deployed to GitHub"
+
 
 
 # ------------------------------------------
