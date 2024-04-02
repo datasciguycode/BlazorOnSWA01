@@ -27,8 +27,21 @@ Initialize-Git
 git remote add origin https://github.com/datasciguycode/BlazorOnSWA01
 git push -u origin master
 Add-GitCommit -p_strCommitMessage "Deployed to GitHub"
+git push
 
+## Human: Create Azure Static Web App *
 
+# Add file "staticwebapp.config.json"
+New-Item -Path .\ -Name "staticwebapp.config.json" -ItemType "file" -Value @"
+{
+    "navigationFallback": {
+        "rewrite": "/index.html"
+    }
+}
+"@
+
+Add-GitCommit -p_strCommitMessage "Added Navigation Fallback config file"
+git push
 
 # ------------------------------------------
 
